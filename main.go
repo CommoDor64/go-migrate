@@ -2,17 +2,17 @@ package main
 
 import (
 	"flag"
+	"github.com/joho/godotenv"
 	"log"
 	"os"
 	"path/filepath"
 	"sort"
-	"github.com/joho/godotenv"
 )
 
 var (
-	dir = flag.String("dir", "./pkg/database/migrations/", "directory containing migration files")
-	envfile   = flag.String("envfile", ".env", "env file")
-	dbURL     = flag.String("dburl", "DATABASE_URL", "db url connection key name in env file")
+	dir     = flag.String("dir", "./pkg/database/migrations/", "directory containing migration files")
+	envfile = flag.String("envfile", ".env", "env file")
+	dbURL   = flag.String("dburl", "DATABASE_URL", "db url connection key name in env file")
 )
 
 func main() {
