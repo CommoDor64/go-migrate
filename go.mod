@@ -1,4 +1,4 @@
-module github.com/CommoDor64/gomigrate
+module github.com/CommoDor64/go-migrate
 
 go 1.13
 
